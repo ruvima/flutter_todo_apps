@@ -1,7 +1,8 @@
-import 'package:cubit_stream_sub_todo/cubits/cubits.dart';
-import 'package:cubit_stream_sub_todo/models/todo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../cubits/cubits.dart';
+import '../models/todo.dart';
 
 class ShowTodos extends StatelessWidget {
   const ShowTodos({Key? key}) : super(key: key);

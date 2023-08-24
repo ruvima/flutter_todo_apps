@@ -1,4 +1,11 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 part of 'todo_filter_cubit.dart';
+
+enum Filter {
+  all,
+  active,
+  completed,
+}
 
 class TodoFilterState extends Equatable {
   final Filter filter;
@@ -6,14 +13,12 @@ class TodoFilterState extends Equatable {
     required this.filter,
   });
 
-  factory TodoFilterState.initial() =>
-      const TodoFilterState(filter: Filter.all);
+  factory TodoFilterState.initial() {
+    return const TodoFilterState(filter: Filter.all);
+  }
 
   @override
   List<Object> get props => [filter];
-
-  @override
-  bool get stringify => true;
 
   TodoFilterState copyWith({
     Filter? filter,
@@ -22,4 +27,7 @@ class TodoFilterState extends Equatable {
       filter: filter ?? this.filter,
     );
   }
+
+  @override
+  bool get stringify => true;
 }

@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 part of 'todo_list_cubit.dart';
 
 class TodoListState extends Equatable {
@@ -7,20 +8,16 @@ class TodoListState extends Equatable {
   });
 
   factory TodoListState.initial() {
-    return TodoListState(
-      todos: [
-        Todo(desc: 'homework', id: '1'),
-        Todo(desc: 'running', id: '2'),
-        Todo(desc: 'study', id: '3', completed: true),
-      ],
-    );
+    return TodoListState(todos: [
+      Todo(desc: 'Do the grocery shopping', id: '1'),
+      Todo(desc: 'Study for the exam', id: '2'),
+      Todo(desc: 'Exercise', id: '3'),
+      Todo(desc: 'Wash the car', completed: true, id: '4'),
+    ]);
   }
 
   @override
   List<Object> get props => [todos];
-
-  @override
-  bool get stringify => true;
 
   TodoListState copyWith({
     List<Todo>? todos,
@@ -29,4 +26,7 @@ class TodoListState extends Equatable {
       todos: todos ?? this.todos,
     );
   }
+
+  @override
+  bool get stringify => true;
 }

@@ -1,9 +1,9 @@
-import 'package:cubit_stream_sub_todo/cubits/cubits.dart';
-import 'package:cubit_stream_sub_todo/utils/debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../cubits/cubits.dart';
 import '../models/todo.dart';
+import '../utils/debounce.dart';
 
 class SearchAndFilterTodo extends StatelessWidget {
   SearchAndFilterTodo({Key? key}) : super(key: key);

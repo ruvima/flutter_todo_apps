@@ -1,7 +1,5 @@
-import 'package:equatable/equatable.dart';
 import 'package:bloc/bloc.dart';
-
-import '../../models/todo.dart';
+import 'package:equatable/equatable.dart';
 
 part 'todo_filter_state.dart';
 

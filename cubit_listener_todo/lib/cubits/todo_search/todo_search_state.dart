@@ -2,7 +2,9 @@ part of 'todo_search_cubit.dart';
 
 class TodoSearchState extends Equatable {
   final String searchTerm;
-  const TodoSearchState({required this.searchTerm});
+  const TodoSearchState({
+    required this.searchTerm,
+  });
 
   factory TodoSearchState.initial() {
     return const TodoSearchState(searchTerm: '');
@@ -11,9 +13,6 @@ class TodoSearchState extends Equatable {
   @override
   List<Object> get props => [searchTerm];
 
-  @override
-  bool get stringify => true;
-
   TodoSearchState copyWith({
     String? searchTerm,
   }) {
@@ -21,4 +20,7 @@ class TodoSearchState extends Equatable {
       searchTerm: searchTerm ?? this.searchTerm,
     );
   }
+
+  @override
+  bool get stringify => true;
 }

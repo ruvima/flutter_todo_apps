@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:cubit_stream_sub_todo/models/todo.dart';
 import 'package:equatable/equatable.dart';
+
+import '../../models/todo.dart';
 
 part 'todo_list_state.dart';
 
