@@ -2,9 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
 import '../../models/todo.dart';
-import '../todo_filter/todo_filter_cubit.dart';
-import '../todo_list/todo_list_cubit.dart';
-import '../todo_search/todo_search_cubit.dart';
+import '../cubits.dart';
 
 part 'filtered_todo_state.dart';
 

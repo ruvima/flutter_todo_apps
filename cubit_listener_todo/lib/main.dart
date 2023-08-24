@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'cubits/active_todo_count/active_todo_count_cubit.dart';
-import 'cubits/filtered_todo/filtered_todo_cubit.dart';
-import 'cubits/todo_filter/todo_filter_cubit.dart';
-import 'cubits/todo_list/todo_list_cubit.dart';
-import 'cubits/todo_search/todo_search_cubit.dart';
+import 'cubits/cubits.dart';
 import 'pages/todos_page.dart';
 
 void main() {

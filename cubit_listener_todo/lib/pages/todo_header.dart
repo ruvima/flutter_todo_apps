@@ -1,8 +1,7 @@
-import 'package:cubit_listener_todo/cubits/todo_list/todo_list_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../cubits/active_todo_count/active_todo_count_cubit.dart';
+import '../cubits/cubits.dart';
 
 class TodoHeader extends StatelessWidget {
   const TodoHeader({super.key});

@@ -1,10 +1,7 @@
-import 'package:cubit_listener_todo/cubits/filtered_todo/filtered_todo_cubit.dart';
-import 'package:cubit_listener_todo/cubits/todo_filter/todo_filter_cubit.dart';
-import 'package:cubit_listener_todo/cubits/todo_search/todo_search_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../cubits/todo_list/todo_list_cubit.dart';
+import '../cubits/cubits.dart';
 import '../models/todo.dart';
 
 class ShowTodos extends StatelessWidget {

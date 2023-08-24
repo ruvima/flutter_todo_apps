@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:cubit_listener_todo/cubits/todo_list/todo_list_cubit.dart';
 import 'package:equatable/equatable.dart';
+
+import '../cubits.dart';
 
 part 'active_todo_count_state.dart';
 
